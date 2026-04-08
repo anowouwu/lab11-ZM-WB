@@ -19,9 +19,13 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         assert mul(-2, 4) == -8
+        assert mul(4, 8) == 32
+        assert mul(2, 2) == 4
 
     def test_divide(self): # 3 assertions
         assert div(4, 4) == 1
+        assert div(3, 6) == 2
+        assert div(2, 4) == 2
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -52,6 +56,8 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-4)
         assert square_root(4) == 2
+        assert square_root(9) == 3
+        assert square_root(16) == 4
 
 # Do not touch this
 if __name__ == "__main__":
