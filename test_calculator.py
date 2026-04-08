@@ -6,16 +6,15 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-     def test_add(self): # 3 assertions
+    def test_add(self): # 3 assertions
         assert add(-2,3) == 1
         assert add(0,0) == 0
-        assert add(0, 1 == 1)
+        assert add(0, 1) == 1
 
     def test_subtract(self): # 3 assertions
         assert subtract(5,3) == 2
         assert subtract(-2, 2) == -4
         assert subtract(0, -2) == 2
-    # ##########################
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -46,6 +45,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
         assert hypotenuse(3, 4) == 5
+        assert hypotenuse(5, 12) == 13
+        assert hypotenuse(6, 8) == 10
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
