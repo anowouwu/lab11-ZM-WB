@@ -1,3 +1,6 @@
+# https://github.com/anowouwu/lab11-ZM-WB
+# Partner 1: Will Benson
+# Partner 2: Zachary Miller
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -15,11 +18,11 @@ def div(a, b):
 def exp(a, b): return a**b
 def square_root(a):
     try: return math.sqrt(a)
-    except ValueError: print("a < 0 value error")
+    except ValueError: raise ValueError
 def hypotenuse(a, b):
     return math.hypot(a, b)
 def subtract(a, b):
     return a - b
 def logarithm(a, b):
     try: return math.log(a, b)
-    except ValueError: print("Value error.")
+    except ValueError: raise ValueError
